@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "tutorial",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/entities/**/*.{ts,js}"],
+  "resolvers": ["dist/resolvers/**/*.{ts,js}"],
+  "subscribers": ["dist/subscriber/**/*.{ts,js}"],
+  "cli": {
+    "entitiesDir": "dist/entities",
+    "resolversDir": "dist/resolvers",
+    "subscribersDir": "dist/subscriber"
+  }
+}
